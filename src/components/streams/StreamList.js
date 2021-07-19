@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const StreamList = (props) => {
   useEffect(() => {
     props.fetchStreams()
-  }, [])
+  })
 
   function renderAdmin(stream) {
     if (stream.userId === props.currentUserId && stream.userId !== undefined) {

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const StreamDelete = (props) => {
   useEffect(() => {
     props.fetchStream(props.match.params.id)
-  }, [])
+  })
 
   const actions = (
     <>

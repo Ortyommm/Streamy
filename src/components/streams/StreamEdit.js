@@ -7,7 +7,7 @@ import { pick } from 'lodash-es'
 const StreamEdit = (props) => {
   useEffect(() => {
     props.fetchStream(props.match.params.id)
-  }, [])
+  })
 
   function onSubmit(formValues) {
     props.editStream(props.match.params.id, formValues)
